@@ -25,4 +25,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/courses', 'HomeController@courses')->name('courses');
-Route::get('/teacher', 'HomeController@teacher')->name('teacher');
+// Route::get('/teacher', 'HomeController@teacher')->name('teacher');
