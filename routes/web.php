@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -25,4 +25,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/courses', 'HomeController@courses')->name('courses');
-Route::get('/courseCreate', 'CourseController@courseCreate')->name('courseEntry');
+Route::get('/courseCreate', 'CourseController@Create')->name('courseEntry');
+
+Route::post('/courseCreate','CourseController@store');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
@@ -21,7 +22,7 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function courseCreate()
+    public function Create()
     {
         return view('layouts.backend.course');
     }
@@ -34,7 +35,18 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $query = DB::table('courses')->insert([
+            'xtitle' => $request->input('xtitle'),
+            'xdesc' => $request->input('xdesc'),
+            'xtype' => $request->input('xtype'),
+            'xmentor' => $request->input('xmentor'),
+        ]);
+
+        if($query){
+            return response(['message' => 'Course created Successfully']);
+        }else{
+            return response(['message' => 'Inserted failed']);
+        }
     }
 
     /**

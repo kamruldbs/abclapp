@@ -3,7 +3,7 @@
 
 
 <div id="app">
-    <show-course></show-course>
+    <course></course>
 </div>
 
 

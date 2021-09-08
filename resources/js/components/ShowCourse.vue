@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 
-    <h1>Hello From Component</h1>
+    <h1>Hellooo From Component</h1>
 </div>
 </template>
 
