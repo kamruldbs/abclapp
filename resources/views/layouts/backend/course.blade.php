@@ -5,6 +5,6 @@
 <div id="app">
     <show-course></show-course>
 </div>
-    
+
 
 @endsection
