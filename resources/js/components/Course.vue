@@ -1,8 +1,5 @@
 <template>
-<div class="container">
-
     <h1>Hello From Component</h1>
-</div>
 </template>
 
 <script>

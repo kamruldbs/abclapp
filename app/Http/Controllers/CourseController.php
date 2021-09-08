@@ -23,7 +23,7 @@ class CourseController extends Controller
      */
     public function courseCreate()
     {
-        return view();
+        return view('layouts.backend.course');
     }
 
     /**

@@ -48,5 +48,8 @@
 <script src="{{asset('backend/dist/js/demo.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('backend/dist/js/pages/dashboard.js')}}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 </html>
